@@ -1,0 +1,40 @@
+.element-content {
+    position: relative;
+
+    .element-item {
+        position: absolute;
+    }
+}
+
+.component-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .component-item {
+        width: 48%;
+        height: 60px;
+        margin: 2% 0;
+        border: 1px solid #dcdfe6;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba($color: #a0cfff, $alpha: 0.2);
+            border: 1px solid #c6e2ff;
+        }
+
+        i {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 12px;
+            user-select: none;
+        }
+    }
+}
